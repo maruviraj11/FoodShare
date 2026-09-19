@@ -1,14 +1,27 @@
-package com.foodshare.request_service.repository;
+package com.foodshare.request_service.dto;
 
-import com.foodshare.request_service.entity.FoodRequest;
 import com.foodshare.request_service.entity.RequestStatus;
-import org.springframework.data.jpa.repository.JpaRepository;
+import lombok.*;
 
-import java.util.List;
+import java.time.LocalDateTime;
 
-public interface RequestRepository extends JpaRepository<FoodRequest, Long> {
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class RequestResponse {
 
-    List<FoodRequest> findByUserId(Long userId);
+    private Long id;
 
-    List<FoodRequest> findByStatus(RequestStatus status);
+    private Long foodId;
+
+    private Long userId;
+
+    private Integer quantity;
+
+    private String message;
+
+    private RequestStatus status;
+
+    private LocalDateTime createdAt;
 }

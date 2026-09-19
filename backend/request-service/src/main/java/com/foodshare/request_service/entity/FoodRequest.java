@@ -1,4 +1,4 @@
-package main.java.com.foodshare.request_service.entity;
+package com.foodshare.request_service.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

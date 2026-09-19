@@ -1,6 +1,4 @@
-
-package main.java.com.foodshare.request_service.repository;
-
+package com.foodshare.request_service.repository;
 
 import com.foodshare.request_service.entity.FoodRequest;
 import com.foodshare.request_service.entity.RequestStatus;

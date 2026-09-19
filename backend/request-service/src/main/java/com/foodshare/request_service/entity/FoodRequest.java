@@ -1,5 +1,4 @@
 package com.foodshare.request_service.entity;
-
 import jakarta.persistence.*;
 import lombok.*;
 
